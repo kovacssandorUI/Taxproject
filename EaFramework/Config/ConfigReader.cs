@@ -17,7 +17,7 @@ public static class ConfigReader
         
         jsonSerializerSettings.Converters.Add(new JsonStringEnumConverter());
         
-        return JsonSerializer.Deserialize<TestSettings>(configFile, jsonSerializerSettings);
+        return JsonSerializer.Deserialize<TestSettings>(configFile, jsonSerializerSettings) ?? throw new InvalidOperationException();
 
     }
 }
