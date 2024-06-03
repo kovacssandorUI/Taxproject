@@ -1,5 +1,5 @@
 
-// ReSharper disable once RedundantUsingDirective
+
 using EaFramework.Config;
 using EaFramework.Driver;
 using Microsoft.Playwright;
@@ -32,7 +32,7 @@ public class UnitTest1 : IClassFixture<PlaywrightDriverInitializer>
 
         var context = await browser.NewContextAsync();
 
-        await page.GotoAsync(_testSettings.ApplicationUrl);
+        await page.GotoAsync(_testSettings.ApplicationUrl ?? throw new InvalidOperationException());
 
         // await page.GotoAsync("https://login.taxually.com/taxuallyb2c.onmicrosoft.com/b2c_1_taxually_signup_signin/oauth2/v2.0/authorize?client_id=f8c607a5-b43a-40b5-bf80-70ecd4285a9c&scope=openid%20https%3A%2F%2Ftaxuallyb2c.onmicrosoft.com%2Fprod-core-api%2Fread-write%20profile%20offline_access&redirect_uri=https%3A%2F%2Fapp.taxually.com%2F&client-request-id=8e6dbb83-e9cc-4d63-bee0-36f443f35979&response_mode=fragment&response_type=code&x-client-SKU=msal.js.browser&x-client-VER=3.7.0&client_info=1&code_challenge=Imzf_pQvc0MsJecW1HWYU3tBmJhedNB0A2-l27NLWJ8&code_challenge_method=S256&nonce=3e884354-4b7a-44e9-8199-d97b5ab6add4&state=eyJpZCI6ImVlNzkzNTIxLWIzZTEtNDJlYS05YzE5LWY0NzU5ZDdjYzM4MCIsIm1ldGEiOnsiaW50ZXJhY3Rpb25UeXBlIjoicmVkaXJlY3QifX0%3D");
 
