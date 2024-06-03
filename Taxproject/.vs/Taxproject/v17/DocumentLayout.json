@@ -3,6 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\sonrisa\\Playwright\\PlaywrithTest2\\TaxProject\\Taxproject\\Taxproject\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{615D6D28-EA7B-43B2-95FB-7AB9D611B177}|..\\EaFramework\\EaFramework.csproj|c:\\users\\sonrisa\\playwright\\playwrithtest2\\taxproject\\taxproject\\eaframework\\config\\testsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{615D6D28-EA7B-43B2-95FB-7AB9D611B177}|..\\EaFramework\\EaFramework.csproj|c:\\users\\sonrisa\\playwright\\playwrithtest2\\taxproject\\taxproject\\eaframework\\config\\configreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5EBBDA47-2A9D-4BF7-94DD-982A2D25BE37}|Taxproject.csproj|c:\\users\\sonrisa\\playwright\\playwrithtest2\\taxproject\\taxproject\\taxproject\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5EBBDA47-2A9D-4BF7-94DD-982A2D25BE37}|Taxproject.csproj|solutionrelative:unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -23,19 +29,41 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "TestSettings.cs",
+              "DocumentMoniker": "C:\\Users\\sonrisa\\Playwright\\PlaywrithTest2\\TaxProject\\Taxproject\\EaFramework\\Config\\TestSettings.cs",
+              "RelativeDocumentMoniker": "..\\EaFramework\\Config\\TestSettings.cs",
+              "ToolTip": "C:\\Users\\sonrisa\\Playwright\\PlaywrithTest2\\TaxProject\\Taxproject\\EaFramework\\Config\\TestSettings.cs",
+              "RelativeToolTip": "..\\EaFramework\\Config\\TestSettings.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAswAgAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T11:37:37.22Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ConfigReader.cs",
+              "DocumentMoniker": "C:\\Users\\sonrisa\\Playwright\\PlaywrithTest2\\TaxProject\\Taxproject\\EaFramework\\Config\\ConfigReader.cs",
+              "RelativeDocumentMoniker": "..\\EaFramework\\Config\\ConfigReader.cs",
+              "ToolTip": "C:\\Users\\sonrisa\\Playwright\\PlaywrithTest2\\TaxProject\\Taxproject\\EaFramework\\Config\\ConfigReader.cs",
+              "RelativeToolTip": "..\\EaFramework\\Config\\ConfigReader.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAIwBMAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T11:30:27.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "UnitTest1.cs",
               "DocumentMoniker": "C:\\Users\\sonrisa\\Playwright\\PlaywrithTest2\\TaxProject\\Taxproject\\Taxproject\\UnitTest1.cs",
               "RelativeDocumentMoniker": "UnitTest1.cs",
               "ToolTip": "C:\\Users\\sonrisa\\Playwright\\PlaywrithTest2\\TaxProject\\Taxproject\\Taxproject\\UnitTest1.cs",
               "RelativeToolTip": "UnitTest1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-03T09:12:13.875Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d84ee353-0bef-5a41-a649-8f89aca5d84d}"
             }
           ]
         }

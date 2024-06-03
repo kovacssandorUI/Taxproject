@@ -15,3 +15,7 @@ server.pid
 /dist/
 .cache
 /Taxproject/.vs/Taxproject/FileContentIndex/
+/Taxproject/.vs/
+/Taxproject/obj/*
+/Taxproject/obj/Debug/*.*
+*.*.cache
