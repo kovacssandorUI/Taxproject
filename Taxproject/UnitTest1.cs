@@ -1,9 +1,11 @@
 
-
+using Taxproject.Pages;
 using EaFramework.Config;
 using EaFramework.Driver;
 using Microsoft.Playwright;
 using Xunit;
+using System;
+using Taxproject.Helper;
 
 namespace Taxproject;
 
@@ -11,6 +13,7 @@ public class UnitTest1 : IClassFixture<PlaywrightDriverInitializer>
 {
     private readonly PlaywrightDriver _playwrightDriver;
     private readonly TestSettings _testSettings;
+    private static Random random = new Random();
 
 
     public UnitTest1(PlaywrightDriverInitializer playwrightDriverInitializer)
@@ -46,9 +49,13 @@ public class UnitTest1 : IClassFixture<PlaywrightDriverInitializer>
 
         await page.GetByRole(AriaRole.Button, new() { Name = "Sign in" }).ClickAsync();
 
-        await page.GetByRole(AriaRole.Heading, new() { Name = "Getting started with Taxually" }).ClickAsync();
+        await page.Locator("div").Filter(new() { HasText = "Subscription summary The price you see here will change according to your settin" }).Nth(3).ClickAsync();
 
-        await page.GetByRole(AriaRole.Button, new() { Name = "Czech Republic" }).ClickAsync();
+        await page.Locator(".col-md-8").ClickAsync();
+
+        await page.GetByText("Czech Republic").First.ClickAsync();
+
+        await page.GetByText("Czech Republic").ClickAsync();
 
         await page.GetByRole(AriaRole.Button, new() { Name = "Help me get a VAT number" }).ClickAsync();
 
@@ -59,8 +66,6 @@ public class UnitTest1 : IClassFixture<PlaywrightDriverInitializer>
         await page.GetByRole(AriaRole.Option, new() { Name = "Company" }).ClickAsync();
 
         await page.Locator("#companyLegalNameOfBusiness").ClickAsync();
-
-        await page.GetByLabel("Incorporation number").ClickAsync();
 
         await page.GetByLabel("Incorporation number").ClickAsync();
 
@@ -92,7 +97,7 @@ public class UnitTest1 : IClassFixture<PlaywrightDriverInitializer>
 
         await page.GetByLabel("House number").ClickAsync();
 
-        await page.GetByLabel("House number").FillAsync("22");
+        await page.GetByLabel("House number").FillAsync(random.Next(1, 101).ToString());
 
         await page.GetByRole(AriaRole.Button, new() { Name = "Next step" }).ClickAsync();
 
